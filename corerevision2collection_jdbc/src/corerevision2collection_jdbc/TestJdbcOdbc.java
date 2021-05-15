@@ -27,12 +27,13 @@ public class TestJdbcOdbc {
 			//step5 close the connection object  
 			con.close();  
 			  
-			
+		
 			
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	
 		
 		
 
