@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+ <bean class="com.Apurva.Springcore.DIRef.B" name="bref">
+ <property name="y" value="50"></property>
+ </bean>
+
+<bean class = "com.Apurva.Springcore.DIRef.A" name = "aobj">
+<property name="x" value="20"></property>
+<property name="b">
+<ref bean="bref"/>
+</property>
+
+</bean>
+ </beans>

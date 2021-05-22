@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <bean class="com.Apurva.Springcore.Collection.Employee" name= "emp">
+ 
+ <property name="empname" value="Archana"></property>
+ <property name="phones">
+ <list>
+     <value>987766666</value>
+     <value>945454545</value>
+     <value>94545454545</value>
+ </list>
+ </property>
+ 
+ <property name="addresses">
+ <set>
+      <value>Nagpur</value>
+      <value>Pune</value>
+ </set>
+ </property>
+ 
+ 
+ <property name="courses">
+ <map>
+      <entry  key="java" value=" 2 months"></entry>
+      <entry key="Python" value="1 month"></entry>
+ </map>
+ </property>
+  </bean>
+ 
+ </beans>
