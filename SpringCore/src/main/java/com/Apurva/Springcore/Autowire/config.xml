@@ -10,17 +10,10 @@
  
  
  <context:annotation-config />
- <bean class="com.Apurva.Springcore.Lifecycle.Pendrive" name="pendrive" init-method="Init" destroy-method="destroy">
- 
- <property name="price" value="134.11" ></property>
+ <bean class="com.Apurva.Springcore.Autowire.Address" name="address">
+ <property name="street" value="Gandhi road"></property>
+ <property name="city" value="Nagpur"></property>
  </bean>
  
- <bean class= "com.Apurva.Springcore.Lifecycle.Usbport" name= "usbport">
- 
- <property name="price" value = "330.20"></property>
-  </bean>
-  
-  <bean class="com.Apurva.Springcore.Lifecycle.Harddisk" name="harddisk">
-  <property name="brand" value="Toshiba"></property>
-  </bean>
+ <bean class="com.Apurva.Springcore.Autowire.Employee" name="employee"></bean>
  </beans>

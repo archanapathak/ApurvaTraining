@@ -17,6 +17,20 @@ AbstractApplicationContext context = new ClassPathXmlApplicationContext("com\\Ap
 		System.out.println(pendrive);
 		
 		context.registerShutdownHook();
+		
+		
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++");
+		
+		Usbport usport = (Usbport) context.getBean("usbport");
+		System.out.println(usport);
+		
+		
+		System.out.println("++++++++++++++++++++++++++++++++++++");
+		
+		
+		Harddisk harddisk = (Harddisk)context.getBean("harddisk");
+		
+		System.out.println(harddisk);
 	}
 
 }
